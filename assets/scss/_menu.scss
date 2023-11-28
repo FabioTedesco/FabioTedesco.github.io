@@ -1,0 +1,27 @@
+nav {
+  background-color: aqua;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  //aggiungi position fixed//
+
+  ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  li{
+    padding: 20px;
+  }
+  
+  a {
+    color: orange;  //setta funzione color//
+  }
+
+  a:hover{
+    color: black; //setta secondary color//
+  }
+
+}
