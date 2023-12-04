@@ -1,5 +1,5 @@
 .about-container {
-  background-color:rgb(196, 220, 215);
+  
   padding-top: 100px;
   padding-bottom: 100px;
 
@@ -78,7 +78,8 @@
       justify-content: center;
       width: 75%;
       height: 10em;
-      background-color: aqua;
+      background-color: RGB(102, 10, 0);
+      color:white;
   
       cursor: pointer;
     }
