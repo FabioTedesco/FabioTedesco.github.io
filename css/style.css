@@ -1,8 +1,9 @@
 nav {
-  background-color: aqua;
+  background-color: RGB(102, 10, 0);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 5em;
   position: fixed;
   right: 0;
   left: 0;
@@ -26,54 +27,170 @@ nav a:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: bisque;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .home img {
   display: flex;
   align-items: center;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
 }
 .home .description {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 35%;
 }
 .home .description h1 {
   margin: 0;
+  font-size: 70px;
 }
 .home .description p {
   margin: 0;
+  font-size: x-large;
 }
 
 .about-container {
-  background-color: chocolate;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
 }
 .about-container .about-me {
+  padding-left: 20%;
+  padding-right: 20%;
+  display: flex;
+  justify-content: center;
+  height: 300px;
+}
+.about-container .about-me .story {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: top;
+}
+.about-container .about-me .story h1 {
+  margin: 0;
+}
+.about-container .about-me .story p {
+  margin: 0;
+}
+.about-container .about-me .written-skills {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  flex: 1;
+  align-items: end;
+  padding-right: 20px;
+  font-size: xx-large;
 }
-.about-container .about-me h1 {
-  margin: 0;
+.about-container .about-me .skills {
+  display: flex;
+  flex-direction: column;
+  font-size: xx-large;
+  font-weight: bolder;
+  flex-wrap: wrap;
 }
-.about-container .about-me p {
-  margin: 0;
+.about-container .about-me .skills ul {
+  padding: 0;
+  list-style-type: none;
 }
-.about-container .gallery {
-  width: 300px;
-  height: 300px;
-  background-color: aqua;
+.about-container .about-me .skills-logos {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+.about-container .about-me .skills-logos img {
+  display: flex;
+  object-fit: contain;
+  width: 50%;
+  height: 4em;
+  padding-bottom: 10%;
+}
+.about-container a {
+  display: flex;
+  justify-content: center;
+}
+.about-container a .gallery {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  height: 10em;
+  background-color: RGB(102, 10, 0);
+  color: white;
   cursor: pointer;
+}
+
+.projects-container {
+  padding-top: 300px;
+  padding-bottom: 300px;
+  display: flex;
+  justify-content: center;
+}
+.projects-container .grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  flex-wrap: wrap;
+}
+.projects-container .grid .project {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 30%;
+  margin-bottom: 25px;
+}
+.projects-container .grid .project .project-img {
+  border-bottom: 1px solid black;
+  height: 7em;
+}
+.projects-container .grid .project .project-description {
+  display: flex;
+}
+.projects-container .grid .project .project-description .logo {
+  border-right: 1px solid black;
+  height: 2em;
+}
+.projects-container .grid .project .project-description .logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.projects-container .grid .project .project-description p {
+  display: flex;
+  justify-content: center;
+  flex: 2;
+}
+
+footer {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+footer .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
 }
 
 * {
   margin: 0;
 }
+
+html {
+  background: linear-gradient(135deg, rgb(25, 42, 86), rgb(35, 35, 35));
+  color: white;
+}
+
+/* background: linear-gradient(135deg, rgb(25, 42, 86), rgb(35, 35, 35));
+ */

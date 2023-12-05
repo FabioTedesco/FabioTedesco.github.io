@@ -1,5 +1,5 @@
 * {
-  background-color: rgb(227, 227, 217);
+  background-color: rgb(140, 254, 254);
 }
 
 header {
@@ -27,18 +27,18 @@ header span {
   flex-direction: column;
   max-width: 32.5%;
 }
-.gallery-container .box-1 .img {
+.gallery-container .box-1 .image {
   display: flex;
   flex-direction: column;
   position: relative;
   margin-bottom: 10px;
 }
-.gallery-container .box-1 .img img {
+.gallery-container .box-1 .image img {
   height: 100%;
   object-fit: contain;
   border-radius: 10px;
 }
-.gallery-container .box-1 .img .overlay {
+.gallery-container .box-1 .image .overlay {
   display: flex;
   position: absolute;
   justify-content: center;
@@ -52,7 +52,7 @@ header span {
   transition: opacity 0.3s;
   font-size: 20px;
 }
-.gallery-container .box-1 .img .overlay:hover {
+.gallery-container .box-1 .image .overlay:hover {
   cursor: pointer;
   opacity: 1;
 }
@@ -61,18 +61,18 @@ header span {
   flex-direction: column;
   max-width: 32.5%;
 }
-.gallery-container .box-2 .img {
+.gallery-container .box-2 .image {
   display: flex;
   flex-direction: column;
   position: relative;
   margin-bottom: 10px;
 }
-.gallery-container .box-2 .img img {
+.gallery-container .box-2 .image img {
   height: 100%;
   object-fit: contain;
   border-radius: 10px;
 }
-.gallery-container .box-2 .img .overlay {
+.gallery-container .box-2 .image .overlay {
   display: flex;
   position: absolute;
   justify-content: center;
@@ -86,7 +86,7 @@ header span {
   transition: opacity 0.3s;
   font-size: 20px;
 }
-.gallery-container .box-2 .img .overlay:hover {
+.gallery-container .box-2 .image .overlay:hover {
   cursor: pointer;
   opacity: 1;
 }
@@ -95,18 +95,18 @@ header span {
   flex-direction: column;
   max-width: 32.5%;
 }
-.gallery-container .box-3 .img {
+.gallery-container .box-3 .image {
   display: flex;
   flex-direction: column;
   position: relative;
   margin-bottom: 10px;
 }
-.gallery-container .box-3 .img img {
+.gallery-container .box-3 .image img {
   height: 100%;
   object-fit: contain;
   border-radius: 10px;
 }
-.gallery-container .box-3 .img .overlay {
+.gallery-container .box-3 .image .overlay {
   display: flex;
   position: absolute;
   justify-content: center;
@@ -120,7 +120,7 @@ header span {
   transition: opacity 0.3s;
   font-size: 20px;
 }
-.gallery-container .box-3 .img .overlay:hover {
+.gallery-container .box-3 .image .overlay:hover {
   cursor: pointer;
   opacity: 1;
 }

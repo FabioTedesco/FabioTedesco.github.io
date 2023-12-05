@@ -1,2 +1,55 @@
+.projects-container{
+  
+  padding-top: 300px;
+  padding-bottom: 300px;
 
+  display: flex;
+  justify-content:center;
+
+  .grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    flex-wrap: wrap;
+
+    .project{
+     display: flex;
+     justify-content: space-around;
+     flex-direction: column;
+     border: 1px solid black;
+     border-radius: 10px;
+     width: 30%;
+     margin-bottom: 25px;
+    
+
+      .project-img{
+      border-bottom: 1px solid black;
+      height: 7em;
+       }
+
+      .project-description{
+        display: flex;
+      
+       .logo{
+         border-right: 1px solid black;
+         height: 2em;
+ 
+         img{
+           max-width: 100%;
+           max-height: 100%;
+         }
+       }
+
+        p{
+           display: flex;
+           justify-content: center;
+           flex: 2;
+         }
+     }
+}
+}
+
+
+}
 
