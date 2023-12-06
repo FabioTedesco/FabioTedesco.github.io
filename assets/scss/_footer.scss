@@ -1,13 +1,11 @@
 footer{
-
-
-  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-
-
+  background-color: RGB(255, 128, 0);
+  color: rgb(35, 35, 35);
+  
 
   .fa {
     padding: 20px;
@@ -19,3 +17,5 @@ footer{
   }
 
 }
+
+

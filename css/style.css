@@ -1,5 +1,6 @@
 nav {
   background-color: RGB(102, 10, 0);
+  padding: 0 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,13 +15,13 @@ nav ul {
   list-style-type: none;
 }
 nav li {
-  padding: 20px;
+  padding: 10px;
 }
 nav a {
   color: orange;
 }
 nav a:hover {
-  color: black;
+  color: rgb(35, 35, 35);
 }
 
 .home {
@@ -191,8 +192,8 @@ nav a:hover {
   }
 }
 .projects-container {
-  padding-top: 300px;
-  padding-bottom: 300px;
+  padding-top: 150px;
+  padding-bottom: 150px;
   display: flex;
   justify-content: center;
 }
@@ -233,12 +234,28 @@ nav a:hover {
   flex: 2;
 }
 
+@media (max-width: 700px) {
+  .projects-container .grid .project {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .projects-container .grid .project {
+    width: 100%;
+  }
+}
+@media (min-width: 701px) and (max-width: 999px) {
+  .projects-container .grid .project {
+    width: 45%;
+  }
+}
 footer {
-  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  background-color: RGB(255, 128, 0);
+  color: rgb(35, 35, 35);
 }
 footer .fa {
   padding: 20px;
@@ -253,7 +270,7 @@ footer .fa {
   margin: 0;
 }
 
-html {
+body {
   background: linear-gradient(135deg, rgb(25, 42, 86), rgb(35, 35, 35));
   color: white;
 }

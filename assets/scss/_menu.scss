@@ -1,6 +1,6 @@
 nav {
   background-color: RGB(102, 10, 0);
-
+  padding: 0 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,7 +16,7 @@ nav {
   }
 
   li{
-    padding: 20px;
+    padding: 10px;
   }
   
   a {
@@ -24,7 +24,9 @@ nav {
   }
 
   a:hover{
-    color: black; //setta secondary color//
+    color: rgb(35, 35, 35); //setta secondary color//
   }
 
 }
+
+
