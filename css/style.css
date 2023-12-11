@@ -1,5 +1,5 @@
 nav {
-  background-color: RGB(102, 10, 0);
+  background-color: rgb(102, 10, 0);
   padding: 0 12px;
   display: flex;
   align-items: center;
@@ -9,6 +9,11 @@ nav {
   right: 0;
   left: 0;
   z-index: 100;
+}
+nav img {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
 }
 nav ul {
   display: flex;
@@ -30,6 +35,7 @@ nav a:hover {
   align-items: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  min-height: 100%;
 }
 .home img {
   display: flex;
@@ -45,11 +51,31 @@ nav a:hover {
 }
 .home .description h1 {
   margin: 0;
-  font-size: 70px;
+  font-size: 4em;
 }
 .home .description p {
   margin: 0;
   font-size: x-large;
+}
+.home .description button {
+  color: white;
+  width: 33%;
+  font-size: large;
+  margin-top: 100px;
+  height: 4em;
+  border-radius: 10px;
+  background-color: rgb(102, 10, 0);
+  border-style: none;
+  transition: opacity 0.3s;
+  margin-right: 30px;
+}
+.home .description button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.home .description button:active {
+  background-color: rgb(35, 35, 35);
+  opacity: 0.5;
 }
 
 @media (max-width: 700px) {
@@ -71,6 +97,39 @@ nav a:hover {
   }
   .home .description p {
     font-size: 15px;
+  }
+  .home .description button {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 701px) and (max-width: 999px) {
+  .home {
+    flex-direction: column;
+    padding-top: 130px;
+    padding-bottom: 100px;
+  }
+  .home img {
+    width: 350px;
+    height: 350px;
+    margin-top: 50px;
+  }
+  .home .description {
+    width: 90%;
+  }
+  .home .description h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+  }
+  .home .description p {
+    font-size: 15px;
+  }
+  .home .description .btn {
+    display: flex;
+    justify-content: center;
+  }
+  .home .description .btn button {
+    margin: 10px;
   }
 }
 .about-container {

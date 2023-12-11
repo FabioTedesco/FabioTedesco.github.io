@@ -1,5 +1,5 @@
 nav {
-  background-color: RGB(102, 10, 0);
+  background-color: rgb(102, 10, 0);
   padding: 0 12px;
   display: flex;
   align-items: center;
@@ -9,6 +9,12 @@ nav {
   right: 0;
   left: 0;
   z-index: 100;
+
+ img{
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+ }
 
   ul {
     display: flex;
