@@ -95,13 +95,30 @@
 
     .gallery {
       display: flex;
-      justify-content: center;
       width: 80%;
-      height: 10em;
-      background-color: RGB(102, 10, 0);
+      height: 20em;
+      background-color: red;   /* RGB(238, 238, 238) */
       color:white;
-  
+      border-radius: 20px;
       cursor: pointer;
+
+       .first-img{
+        border-radius: 20px 0 0 20px;
+        display: flex;
+        flex: 1;
+        }
+       .second-img{
+        border-radius: 0;
+        display: flex;
+        flex: 1;
+        }
+       .third-img{
+        border-radius: 0 20px 20px 0;
+        display: flex;
+        flex: 1;
+        }  
+        
+      
     }
   } 
 }

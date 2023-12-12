@@ -210,12 +210,27 @@ nav a:hover {
 }
 .about-container a .gallery {
   display: flex;
-  justify-content: center;
   width: 80%;
-  height: 10em;
-  background-color: RGB(102, 10, 0);
+  height: 20em;
+  background-color: red; /* RGB(238, 238, 238) */
   color: white;
+  border-radius: 20px;
   cursor: pointer;
+}
+.about-container a .gallery .first-img {
+  border-radius: 20px 0 0 20px;
+  display: flex;
+  flex: 1;
+}
+.about-container a .gallery .second-img {
+  border-radius: 0;
+  display: flex;
+  flex: 1;
+}
+.about-container a .gallery .third-img {
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  flex: 1;
 }
 
 @media (max-width: 700px) {
