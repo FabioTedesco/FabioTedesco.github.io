@@ -139,6 +139,15 @@ nav a:hover {
   justify-content: space-around;
   flex-direction: column;
 }
+.about-container h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 70px;
+}
+.about-container h1 span {
+  color: red;
+}
 .about-container .about-me {
   padding-left: 50px;
   padding-right: 50px;
@@ -152,7 +161,7 @@ nav a:hover {
   align-items: top;
   margin-left: 8%;
 }
-.about-container .about-me .story h1 {
+.about-container .about-me .story h2 {
   margin: 0;
   font-size: xx-large;
 }
