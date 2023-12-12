@@ -23,10 +23,10 @@ nav li {
   padding: 10px;
 }
 nav a {
-  color: orange;
+  color: white;
 }
 nav a:hover {
-  color: rgb(35, 35, 35);
+  color: orange;
 }
 
 .home {
@@ -256,7 +256,12 @@ nav a:hover {
   padding-top: 150px;
   padding-bottom: 150px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.projects-container h1 {
+  margin-bottom: 80px;
+  font-size: 4em;
 }
 .projects-container .grid {
   display: flex;
@@ -273,10 +278,15 @@ nav a:hover {
   border-radius: 10px;
   width: 30%;
   margin-bottom: 25px;
+  transition: transform 0.5s;
+}
+.projects-container .grid .project:hover {
+  transform: scale(1.07);
 }
 .projects-container .grid .project .project-img {
   border-bottom: 1px solid black;
-  height: 360px;
+  height: 200px;
+  border-radius: 10px;
 }
 .projects-container .grid .project .project-img img {
   width: 100%;
@@ -350,6 +360,9 @@ footer .fa {
 .form-container form {
   width: 35%;
 }
+.form-container form ::placeholder {
+  font-size: larger;
+}
 .form-container form .first-row {
   display: flex;
   justify-content: space-between;
@@ -404,8 +417,8 @@ footer .fa {
 }
 
 body {
-  background: linear-gradient(135deg, rgb(25, 42, 86), rgb(35, 35, 35));
-  color: white;
+  background: RGB(238, 238, 238);
+  color: black;
 }
 
 /* background: linear-gradient(135deg, rgb(25, 42, 86), rgb(35, 35, 35));
