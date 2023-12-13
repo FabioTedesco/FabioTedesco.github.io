@@ -185,7 +185,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   font-size: xx-large;
-  font-weight: bolder;
+  font-weight: 900;
   flex-wrap: wrap;
 }
 .about-container .about-me .skills ul {
@@ -249,7 +249,7 @@ nav a:hover {
   font-size: 20px;
   backdrop-filter: blur(3px);
   font-size: 2em;
-  font-weight: bolder;
+  font-weight: 900;
 }
 .about-container a .gallery .overlay:hover {
   cursor: pointer;
@@ -363,6 +363,7 @@ nav a:hover {
   justify-content: center;
   flex: 2;
   align-items: center;
+  font-weight: 600;
 }
 
 @media (max-width: 700px) {
@@ -380,23 +381,6 @@ nav a:hover {
     width: 45%;
   }
 }
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: RGB(128, 0, 0);
-  color: white;
-}
-footer .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
-
 .form-container {
   padding-bottom: 150px;
   display: flex;
@@ -468,11 +452,29 @@ footer .fa {
     width: 90%;
   }
 }
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: RGB(128, 0, 0);
+  color: white;
+}
+footer .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
 /* RGB(128, 0, 0)  bordeux scuro*/
 /* rgb(238, 238, 238) primary color ufficiale*/
 /* RGB(189, 201, 176) verde salvia*/
 * {
   margin: 0;
+  font-family: "Nunito", sans-serif;
 }
 
 body {
@@ -481,7 +483,7 @@ body {
 }
 
 span {
-  font-weight: bold;
+  font-weight: 900;
   color: RGB(128, 0, 0);
 }
 

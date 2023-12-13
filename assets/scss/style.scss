@@ -1,15 +1,17 @@
 @import "config";
 @import "menu";
-@import "home";
-@import "about";
-@import "project";
+@import "section-1";
+@import "section-2";
+@import "section-3";
+@import "section-4";
 @import "footer";
-@import "form";
+
 @import "config";
 
 
 *{
   margin:0;
+  font-family: 'Nunito', sans-serif;
 }
 
 
@@ -20,7 +22,7 @@ body{
 }
 
 span{
-  font-weight: bold;
+  font-weight: 900;
   color: $secondary-color
 }
 /* background: linear-gradient(135deg, rgb(25, 42, 86), rgb(35, 35, 35));
