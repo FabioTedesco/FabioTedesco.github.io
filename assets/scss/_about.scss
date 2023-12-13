@@ -1,32 +1,51 @@
 .about-container {
-  
-  padding-top: 200px;
-  padding-bottom: 200px;
-
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+
+  h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 70px;
+
+   
+  }
+
+  
   
 
   .about-me{
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 50px;
+    padding-right: 50px;
     display: flex;
-    justify-content: center;
-    height: 300px;
+    height: 400px;
+    
+    
+
     
     .story{
       display: flex;
       flex: 1;
       flex-direction: column;
       align-items: top;
-      h1{
+      margin-left: 8%;
+
+      h2{
         margin: 0;
+        font-size: xx-large;
       }
   
       p{
         margin: 0;
+        font-size: large;
       }
+    }
+
+    .skill-mobile{
+      display: none;
     }
 
     .written-skills{
@@ -57,7 +76,6 @@
       flex-direction: column;
       flex:1;
       flex-wrap: wrap;
-      padding-left: 20px;
 
       img{
         display: flex;
@@ -75,17 +93,85 @@
 
     .gallery {
       display: flex;
-      justify-content: center;
-      width: 75%;
-      height: 10em;
-      background-color: RGB(102, 10, 0);
+      width: 80%;
+      height: 20em;
+      background-color: red;   /* RGB(238, 238, 238) */
       color:white;
-  
+      border-radius: 20px;
       cursor: pointer;
+
+       .first-img{
+        border-radius: 20px 0 0 20px;
+        display: flex;
+        flex: 1;
+        }
+       .second-img{
+        border-radius: 0;
+        display: flex;
+        flex: 1;
+        }
+       .third-img{
+        border-radius: 0 20px 20px 0;
+        display: flex;
+        flex: 1;
+        }  
+        
+      
+    }
+  } 
+}
+
+@media(max-width:700px){
+  .about-container{
+    padding: 0;
+    .about-me{
+      flex-direction: column;
+      height: 100%;
+      padding: 0;
+      margin-left: 5px;
+      margin-right: 5px;
+
+      .skill-mobile{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      .story{
+        flex: 0;
+        h1,p{
+          margin-right: 5px;
+          margin-left: 5px;
+        }
+      }
+
+      .written-skills{
+        display: none;
+        flex: 0;
+      }
+
+      .skills{
+        display: none;
+      }
+
+      .skills-logos{
+        padding: 0;
+        flex: 0;
+        flex-direction: row;
+
+
+        
+        img{
+          width: 50%;
+        }
+      }
+
+
     }
   }
 
-  
-  
-  
+a{
+  justify-content: left;
+}
 }

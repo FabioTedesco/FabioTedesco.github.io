@@ -1,6 +1,6 @@
 nav {
-  background-color: RGB(102, 10, 0);
-
+  background-color: $secondary-color;
+  padding: 0 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,21 +10,30 @@ nav {
   left: 0;
   z-index: 100;
 
+ img{
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+ }
+
   ul {
     display: flex;
     list-style-type: none;
   }
 
   li{
-    padding: 20px;
+    padding: 10px;
   }
   
   a {
-    color: orange;  //setta funzione color//
+    color: white; 
+    text-decoration: none; 
   }
 
   a:hover{
-    color: black; //setta secondary color//
+    color: orange; 
   }
 
 }
+
+
