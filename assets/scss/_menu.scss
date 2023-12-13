@@ -4,16 +4,17 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 5em;
+  height: 6rem;
   position: fixed;
   right: 0;
   left: 0;
   z-index: 100;
+  font-size: 20px;
 
 
  img{
-  width: 4em;
-  height: 4em;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
  }
 

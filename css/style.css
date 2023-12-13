@@ -7,15 +7,16 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 5em;
+  height: 6rem;
   position: fixed;
   right: 0;
   left: 0;
   z-index: 100;
+  font-size: 20px;
 }
 nav img {
-  width: 4em;
-  height: 4em;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
 }
 nav ul {
@@ -44,8 +45,8 @@ nav a:hover {
 .home img {
   display: flex;
   align-items: center;
-  width: 400px;
-  height: 400px;
+  width: 30rem;
+  height: 30rem;
   border-radius: 50%;
 }
 .home .description {
@@ -66,7 +67,7 @@ nav a:hover {
   width: 33%;
   font-size: large;
   margin-top: 100px;
-  height: 4em;
+  height: 5rem;
   border-radius: 10px;
   background-color: RGB(128, 0, 0);
   border-style: none;
@@ -147,7 +148,7 @@ nav a:hover {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  font-size: 70px;
+  font-size: 5rem;
 }
 .about-container .about-me {
   padding-left: 50px;
@@ -308,7 +309,7 @@ nav a:hover {
 }
 .projects-container h1 {
   margin-bottom: 20px;
-  font-size: 4em;
+  font-size: 5rem;
 }
 .projects-container .grid {
   display: flex;
@@ -389,8 +390,7 @@ nav a:hover {
 }
 .form-container h1 {
   padding-bottom: 30px;
-  font-weight: lighter;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 .form-container form {
   width: 35%;
@@ -437,6 +437,7 @@ nav a:hover {
   cursor: pointer;
   background-color: RGB(128, 0, 0);
   color: white;
+  font-size: 1rem;
 }
 .form-container .btn button:active {
   opacity: 0.5;
