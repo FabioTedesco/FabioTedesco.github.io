@@ -1,5 +1,5 @@
 nav {
-  background-color: rgb(102, 10, 0);
+  background-color: $secondary-color;
   padding: 0 12px;
   display: flex;
   align-items: center;
@@ -26,11 +26,12 @@ nav {
   }
   
   a {
-    color: white;  //setta funzione color//
+    color: white; 
+    text-decoration: none; 
   }
 
   a:hover{
-    color: orange; //setta secondary color//
+    color: orange; 
   }
 
 }
