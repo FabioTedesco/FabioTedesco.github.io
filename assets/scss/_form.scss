@@ -64,6 +64,12 @@ width: 35%;
     border: 2px solid $secondary-color;
     border-radius: 10px;
     cursor: pointer;
+    background-color: $secondary-color;
+    color: white;
+
+    &:active{
+      opacity: 0.5;
+    }
   }
 }
 }

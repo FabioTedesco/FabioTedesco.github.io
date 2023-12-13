@@ -72,13 +72,13 @@ nav a:hover {
   border-style: none;
   transition: opacity 0.3s;
   margin-right: 30px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
 }
 .home .description button:hover {
   cursor: pointer;
   opacity: 0.7;
 }
 .home .description button:active {
-  background-color: rgb(35, 35, 35);
   opacity: 0.5;
 }
 
@@ -451,6 +451,11 @@ footer .fa {
   border: 2px solid RGB(128, 0, 0);
   border-radius: 10px;
   cursor: pointer;
+  background-color: RGB(128, 0, 0);
+  color: white;
+}
+.form-container .btn button:active {
+  opacity: 0.5;
 }
 
 @media (max-width: 700px) {
