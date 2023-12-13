@@ -217,6 +217,7 @@ nav a:hover {
   color: white;
   border-radius: 20px;
   cursor: pointer;
+  position: relative;
 }
 .about-container a .gallery .first-img {
   border-radius: 20px 0 0 20px;
@@ -232,6 +233,27 @@ nav a:hover {
   border-radius: 0 20px 20px 0;
   display: flex;
   flex: 1;
+}
+.about-container a .gallery .overlay {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  color: RGB(128, 0, 0);
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 20px;
+  backdrop-filter: blur(3px);
+  font-size: 2em;
+  font-weight: bolder;
+}
+.about-container a .gallery .overlay:hover {
+  cursor: pointer;
+  opacity: 1;
 }
 
 @media (max-width: 700px) {

@@ -14,18 +14,12 @@
    
   }
 
-  
-  
-
   .about-me{
     padding-left: 50px;
     padding-right: 50px;
     display: flex;
     height: 400px;
-    
-    
-
-    
+  
     .story{
       display: flex;
       flex: 1;
@@ -55,7 +49,6 @@
      align-items:end;
      padding-right: 20px;
      font-size: xx-large;
-
     }
 
     .skills{
@@ -85,7 +78,6 @@
         padding-bottom: 10%;
       }
     }
-    
   }
   a{
     display: flex;
@@ -99,6 +91,7 @@
       color:white;
       border-radius: 20px;
       cursor: pointer;
+      position: relative;
 
        .first-img{
         border-radius: 20px 0 0 20px;
@@ -116,6 +109,28 @@
         flex: 1;
         }  
         
+        .overlay{
+          display: flex;
+          position: absolute;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+          background: rgba($color: white, $alpha: 0.6);
+          border-radius: 20px;
+          color: $secondary-color;
+          opacity: 0;
+          transition: opacity 0.3s;
+          font-size: 20px;
+          backdrop-filter: blur(3px);
+          font-size: 2em;
+          font-weight: bolder;
+          
+          &:hover{
+            cursor: pointer;
+            opacity: 1;
+          }
+        }
       
     }
   } 
