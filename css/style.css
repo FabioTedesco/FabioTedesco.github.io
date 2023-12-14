@@ -154,7 +154,7 @@ nav a:hover {
   padding-left: 50px;
   padding-right: 50px;
   display: flex;
-  height: 400px;
+  margin-bottom: 40px;
 }
 .about-container .about-me .story {
   display: flex;
@@ -195,16 +195,14 @@ nav a:hover {
 }
 .about-container .about-me .skills-logos {
   display: flex;
-  flex-direction: column;
   flex: 1;
   flex-wrap: wrap;
+  height: 400px;
 }
 .about-container .about-me .skills-logos img {
   display: flex;
-  object-fit: contain;
   width: 50%;
   height: 4em;
-  padding-bottom: 10%;
 }
 .about-container a {
   display: flex;
@@ -221,19 +219,15 @@ nav a:hover {
   position: relative;
 }
 .about-container a .gallery .first-img {
+  width: 33.3333%;
   border-radius: 20px 0 0 20px;
-  display: flex;
-  flex: 1;
 }
 .about-container a .gallery .second-img {
-  border-radius: 0;
-  display: flex;
-  flex: 1;
+  width: 33.3333%;
 }
 .about-container a .gallery .third-img {
+  width: 33.3333%;
   border-radius: 0 20px 20px 0;
-  display: flex;
-  flex: 1;
 }
 .about-container a .gallery .overlay {
   display: flex;

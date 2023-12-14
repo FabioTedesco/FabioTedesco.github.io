@@ -12,11 +12,13 @@
     font-size: 5rem;
   }
 
+ 
+
   .about-me{
     padding-left: 50px;
     padding-right: 50px;
     display: flex;
-    height: 400px;
+    margin-bottom: 40px;
   
     .story{
       display: flex;
@@ -64,19 +66,18 @@
 
     .skills-logos{
       display: flex;
-      flex-direction: column;
       flex:1;
       flex-wrap: wrap;
+      height: 400px;
 
       img{
         display: flex;
-        object-fit: contain;
         width: 50%;
         height: 4em;
-        padding-bottom: 10%;
       }
     }
   }
+  
   a{
     display: flex;
     justify-content: center;
@@ -91,21 +92,20 @@
       cursor: pointer;
       position: relative;
 
-       .first-img{
+      .first-img{
+        width: 33.3333%;
         border-radius: 20px 0 0 20px;
-        display: flex;
-        flex: 1;
-        }
-       .second-img{
-        border-radius: 0;
-        display: flex;
-        flex: 1;
-        }
-       .third-img{
+      }
+
+      .second-img{
+        width: 33.3333%;
+      }
+
+      .third-img{
+        width: 33.3333%;
         border-radius: 0 20px 20px 0;
-        display: flex;
-        flex: 1;
-        }  
+      }
+ 
         
         .overlay{
           display: flex;
@@ -129,9 +129,8 @@
             opacity: 1;
           }
         }
-      
     }
-  } 
+  }
 }
 
 @media(max-width:700px){
