@@ -12,8 +12,6 @@
     font-size: 5rem;
   }
 
- 
-
   .about-me{
     padding-left: 50px;
     padding-right: 50px;
@@ -86,7 +84,6 @@
       display: flex;
       width: 80%;
       height: 20em;
-      background-color: red;   /* RGB(238, 238, 238) */
       color:white;
       border-radius: 20px;
       cursor: pointer;
@@ -105,6 +102,8 @@
         width: 33.3333%;
         border-radius: 0 20px 20px 0;
       }
+
+      
  
         
         .overlay{
@@ -136,6 +135,12 @@
 @media(max-width:700px){
   .about-container{
     padding: 0;
+    
+    h1{
+      margin-bottom: 0;
+      font-size: 4rem;
+    }
+
     .about-me{
       flex-direction: column;
       height: 100%;
@@ -143,19 +148,16 @@
       margin-left: 5px;
       margin-right: 5px;
 
+      .story{
+        margin: 1px;
+        text-align: center;
+      }
+
       .skill-mobile{
         display: flex;
         justify-content: center;
         margin-top: 20px;
         margin-bottom: 10px;
-      }
-
-      .story{
-        flex: 0;
-        h1,p{
-          margin-right: 5px;
-          margin-left: 5px;
-        }
       }
 
       .written-skills{
@@ -172,20 +174,18 @@
         flex: 0;
         flex-direction: row;
 
-
-        
         img{
           width: 50%;
         }
       }
-
-
     }
   }
 
-a{
-  justify-content: left;
-}
+      
+    
+
+  
+  
 }
 
 

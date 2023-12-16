@@ -16,7 +16,20 @@ footer{
     text-decoration: none;
     margin: 5px 2px;
   }
-
 }
+
+@media(max-width:700px) {
+  footer{
+    flex-direction: column;
+
+    p{
+      margin-bottom: 10px;
+    }
+
+    
+  }
+}
+
+
 
 

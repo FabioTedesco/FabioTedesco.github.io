@@ -18,6 +18,14 @@ footer .fa {
   margin: 5px 2px;
 }
 
+@media (max-width: 700px) {
+  footer {
+    flex-direction: column;
+  }
+  footer p {
+    margin-bottom: 10px;
+  }
+}
 html {
   background: linear-gradient(to top, rgb(238, 238, 238), rgb(205, 205, 205));
 }

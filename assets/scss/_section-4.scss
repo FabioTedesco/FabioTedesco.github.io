@@ -9,7 +9,7 @@
   align-items: center;
 
 form{
-width: 35%;
+width: 50%;
 ::placeholder{
   font-size:larger;
 }
@@ -76,6 +76,9 @@ width: 35%;
 
 @media(max-width:700px) {
   .form-container{
+    h1{
+      font-size: 4rem;
+    }
     form{
       width: 90%;
     }

@@ -103,11 +103,17 @@ nav a:hover {
   .home .description p {
     font-size: 15px;
   }
-  .home .description button {
-    margin-top: 10px;
+  .home .description .btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .home .description .btn button {
+    width: 100px;
+    margin-top: 30px;
   }
 }
-@media (min-width: 701px) and (max-width: 999px) {
+@media (min-width: 701px) and (max-width: 1199px) {
   .home {
     flex-direction: column;
     padding-top: 130px;
@@ -127,14 +133,17 @@ nav a:hover {
     font-size: 40px;
   }
   .home .description p {
+    text-align: center;
     font-size: 15px;
   }
   .home .description .btn {
     display: flex;
     justify-content: center;
+    width: 100%;
   }
   .home .description .btn button {
-    margin: 10px;
+    width: 150px;
+    margin-top: 30px;
   }
 }
 .about-container {
@@ -212,7 +221,6 @@ nav a:hover {
   display: flex;
   width: 80%;
   height: 20em;
-  background-color: red; /* RGB(238, 238, 238) */
   color: white;
   border-radius: 20px;
   cursor: pointer;
@@ -255,6 +263,10 @@ nav a:hover {
   .about-container {
     padding: 0;
   }
+  .about-container h1 {
+    margin-bottom: 0;
+    font-size: 4rem;
+  }
   .about-container .about-me {
     flex-direction: column;
     height: 100%;
@@ -262,18 +274,15 @@ nav a:hover {
     margin-left: 5px;
     margin-right: 5px;
   }
+  .about-container .about-me .story {
+    margin: 1px;
+    text-align: center;
+  }
   .about-container .about-me .skill-mobile {
     display: flex;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 10px;
-  }
-  .about-container .about-me .story {
-    flex: 0;
-  }
-  .about-container .about-me .story h1, .about-container .about-me .story p {
-    margin-right: 5px;
-    margin-left: 5px;
   }
   .about-container .about-me .written-skills {
     display: none;
@@ -289,9 +298,6 @@ nav a:hover {
   }
   .about-container .about-me .skills-logos img {
     width: 50%;
-  }
-  a {
-    justify-content: left;
   }
 }
 .projects-container {
@@ -362,18 +368,38 @@ nav a:hover {
 }
 
 @media (max-width: 700px) {
+  .projects-container h1 {
+    font-size: 4rem;
+  }
+  .projects-container .grid .first-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects-container .grid .second-row {
+    flex-direction: column;
+    align-items: center;
+  }
   .projects-container .grid .project {
-    width: 100%;
+    width: 70%;
   }
 }
-@media (max-width: 700px) {
-  .projects-container .grid .project {
-    width: 100%;
+@media (min-width: 701px) and (max-width: 1199px) {
+  .projects-container .grid {
+    flex-direction: row;
+    width: 90%;
   }
-}
-@media (min-width: 701px) and (max-width: 999px) {
+  .projects-container .grid .first-row {
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+  }
+  .projects-container .grid .second-row {
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+  }
   .projects-container .grid .project {
-    width: 45%;
+    width: 90%;
   }
 }
 .form-container {
@@ -387,7 +413,7 @@ nav a:hover {
   font-size: 5rem;
 }
 .form-container form {
-  width: 35%;
+  width: 50%;
 }
 .form-container form ::placeholder {
   font-size: larger;
@@ -438,6 +464,9 @@ nav a:hover {
 }
 
 @media (max-width: 700px) {
+  .form-container h1 {
+    font-size: 4rem;
+  }
   .form-container form {
     width: 90%;
   }
@@ -464,6 +493,14 @@ footer .fa {
   margin: 5px 2px;
 }
 
+@media (max-width: 700px) {
+  footer {
+    flex-direction: column;
+  }
+  footer p {
+    margin-bottom: 10px;
+  }
+}
 /* RGB(128, 0, 0)  bordeux scuro*/
 /* rgb(238, 238, 238) primary color ufficiale*/
 /* RGB(189, 201, 176) verde salvia*/
