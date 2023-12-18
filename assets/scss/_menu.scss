@@ -1,4 +1,4 @@
-nav {
+header{
   background-color: $secondary-color;
   padding: 0 12px;
   display: flex;
@@ -11,31 +11,82 @@ nav {
   z-index: 100;
   font-size: 20px;
 
+ 
 
- img{
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
- }
-
-  ul {
-    display: flex;
-    list-style-type: none;
-  }
-
-  li{
-    padding: 10px;
-  }
+  .logo{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+   }
   
-  a {
-    color: white; 
-    text-decoration: none; 
+
+  nav {
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+    }
+  
+    li{
+      padding: 10px;
+    }
+    
+    a {
+      color: white; 
+      text-decoration: none; 
+    }
+  
+    a:hover{
+      color: orange; 
+    }
   }
 
-  a:hover{
-    color: orange; 
-  }
+ .menu-mobile{
+  display: none;
+  .dropdown{
+    display: flex;
+    flex-direction: column;
+    height: 2rem;
+    overflow: hidden;
 
+    img{
+      height: 2rem;
+    }
+    
+   &:hover {
+    overflow: visible;
+
+    ul{
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      padding-top: 30px;
+      width: 100%;
+      background-color: $secondary-color;
+      
+      li{
+        padding: 10px 0;
+        
+        a{
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+   }
+   }
+ }
 }
 
-
+@media (max-width:700px) {
+  header{
+    nav{
+      display: none;
+    }
+    .menu-mobile{
+      display: block;
+    }
+  }
+ 
+}

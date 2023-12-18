@@ -1,7 +1,7 @@
 /* RGB(128, 0, 0)  bordeux scuro*/
 /* rgb(238, 238, 238) primary color ufficiale*/
 /* RGB(189, 201, 176) verde salvia*/
-nav {
+header {
   background-color: RGB(128, 0, 0);
   padding: 0 12px;
   display: flex;
@@ -14,26 +14,65 @@ nav {
   z-index: 100;
   font-size: 20px;
 }
-nav img {
+header .logo {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
 }
-nav ul {
+header nav ul {
   display: flex;
   list-style-type: none;
+  padding: 0;
 }
-nav li {
+header nav li {
   padding: 10px;
 }
-nav a {
+header nav a {
   color: white;
   text-decoration: none;
 }
-nav a:hover {
+header nav a:hover {
   color: orange;
 }
+header .menu-mobile {
+  display: none;
+}
+header .menu-mobile .dropdown {
+  display: flex;
+  flex-direction: column;
+  height: 2rem;
+  overflow: hidden;
+}
+header .menu-mobile .dropdown img {
+  height: 2rem;
+}
+header .menu-mobile .dropdown:hover {
+  overflow: visible;
+}
+header .menu-mobile .dropdown:hover ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-top: 30px;
+  width: 100%;
+  background-color: RGB(128, 0, 0);
+}
+header .menu-mobile .dropdown:hover ul li {
+  padding: 10px 0;
+}
+header .menu-mobile .dropdown:hover ul li a {
+  color: white;
+  text-decoration: none;
+}
 
+@media (max-width: 700px) {
+  header nav {
+    display: none;
+  }
+  header .menu-mobile {
+    display: block;
+  }
+}
 .home {
   display: flex;
   justify-content: space-around;
@@ -258,6 +297,9 @@ nav a:hover {
   cursor: pointer;
   opacity: 1;
 }
+.about-container .btn-gallery {
+  display: none;
+}
 
 @media (max-width: 700px) {
   .about-container {
@@ -298,6 +340,25 @@ nav a:hover {
   }
   .about-container .about-me .skills-logos img {
     width: 50%;
+  }
+  .about-container a {
+    display: none;
+  }
+  .about-container .btn-gallery {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .about-container .btn-gallery button {
+    color: white;
+    width: 33%;
+    font-size: large;
+    height: 5rem;
+    border-radius: 10px;
+    background-color: RGB(128, 0, 0);
+    border-style: none;
+    transition: opacity 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
   }
 }
 .projects-container {
