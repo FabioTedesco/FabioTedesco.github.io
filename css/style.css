@@ -191,7 +191,7 @@ header .menu-mobile .dropdown:hover ul li a {
   padding-top: 100px;
   padding-bottom: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
 }
 .about-container h1 {
@@ -208,7 +208,7 @@ header .menu-mobile .dropdown:hover ul li a {
 }
 .about-container .about-me .story {
   display: flex;
-  flex: 1;
+  flex: 0.8;
   flex-direction: column;
   align-items: top;
   margin-left: 8%;
@@ -221,10 +221,13 @@ header .menu-mobile .dropdown:hover ul li a {
   margin: 0;
   font-size: large;
 }
-.about-container .about-me .skill-mobile {
+.about-container .about-me .skills-container {
+  display: flex;
+}
+.about-container .about-me .skills-container .skill-mobile {
   display: none;
 }
-.about-container .about-me .written-skills {
+.about-container .about-me .skills-container .written-skills {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -232,24 +235,24 @@ header .menu-mobile .dropdown:hover ul li a {
   padding-right: 20px;
   font-size: xx-large;
 }
-.about-container .about-me .skills {
+.about-container .about-me .skills-container .skills {
   display: flex;
   flex-direction: column;
   font-size: xx-large;
   font-weight: 900;
   flex-wrap: wrap;
 }
-.about-container .about-me .skills ul {
+.about-container .about-me .skills-container .skills ul {
   padding: 0;
   list-style-type: none;
 }
-.about-container .about-me .skills-logos {
+.about-container .about-me .skills-container .skills-logos {
   display: flex;
   flex: 1;
   flex-wrap: wrap;
   height: 400px;
 }
-.about-container .about-me .skills-logos img {
+.about-container .about-me .skills-container .skills-logos img {
   display: flex;
   width: 50%;
   height: 4em;
@@ -322,25 +325,28 @@ header .menu-mobile .dropdown:hover ul li a {
     margin: 1px;
     text-align: center;
   }
-  .about-container .about-me .skill-mobile {
+  .about-container .about-me .skills-container {
+    flex-direction: column;
+  }
+  .about-container .about-me .skills-container .skill-mobile {
     display: flex;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 10px;
   }
-  .about-container .about-me .written-skills {
+  .about-container .about-me .skills-container .written-skills {
     display: none;
     flex: 0;
   }
-  .about-container .about-me .skills {
+  .about-container .about-me .skills-container .skills {
     display: none;
   }
-  .about-container .about-me .skills-logos {
+  .about-container .about-me .skills-container .skills-logos {
     padding: 0;
     flex: 0;
     flex-direction: row;
   }
-  .about-container .about-me .skills-logos img {
+  .about-container .about-me .skills-container .skills-logos img {
     width: 50%;
   }
   .about-container a {
@@ -361,6 +367,30 @@ header .menu-mobile .dropdown:hover ul li a {
     border-style: none;
     transition: opacity 0.3s;
     box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
+  }
+}
+@media (min-width: 701px) and (max-width: 1199px) {
+  .about-container .about-me {
+    flex-direction: column;
+  }
+  .about-container .about-me .story {
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+  .about-container .about-me .skills-container .written-skills {
+    align-items: flex-start;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  .about-container a .gallery .first-img {
+    width: 50%;
+  }
+  .about-container a .gallery .second-img {
+    width: 50%;
+    border-radius: 0 20px 20px 0;
+  }
+  .about-container a .gallery .third-img {
+    display: none;
   }
 }
 .projects-container {
