@@ -45,28 +45,34 @@ header{
  .menu-mobile{
   display: none;
   .dropdown{
+
     display: flex;
     flex-direction: column;
-    height: 2rem;
-    overflow: hidden;
+    position: relative;
 
     img{
       height: 2rem;
     }
-    
-   &:hover {
-    overflow: visible;
 
     ul{
+      display: none;
+    }
+    
+   &:hover {
+
+    ul{
+      position: absolute;
+      right: 0px;
       display: flex;
       flex-direction: column;
       list-style-type: none;
-      padding-top: 30px;
-      width: 100%;
+      padding-top: 60px;
+      padding-left: 0;
       background-color: $secondary-color;
       
       li{
-        padding: 10px 0;
+        margin: 10px 10px;
+        border-bottom: 1px solid white;
         
         a{
           color: white;

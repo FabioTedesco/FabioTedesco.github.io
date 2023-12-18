@@ -40,25 +40,27 @@ header .menu-mobile {
 header .menu-mobile .dropdown {
   display: flex;
   flex-direction: column;
-  height: 2rem;
-  overflow: hidden;
+  position: relative;
 }
 header .menu-mobile .dropdown img {
   height: 2rem;
 }
-header .menu-mobile .dropdown:hover {
-  overflow: visible;
+header .menu-mobile .dropdown ul {
+  display: none;
 }
 header .menu-mobile .dropdown:hover ul {
+  position: absolute;
+  right: 0px;
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  padding-top: 30px;
-  width: 100%;
+  padding-top: 60px;
+  padding-left: 0;
   background-color: RGB(128, 0, 0);
 }
 header .menu-mobile .dropdown:hover ul li {
-  padding: 10px 0;
+  margin: 10px 10px;
+  border-bottom: 1px solid white;
 }
 header .menu-mobile .dropdown:hover ul li a {
   color: white;
