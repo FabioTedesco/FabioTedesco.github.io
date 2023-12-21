@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;900&family=Roboto:wght@400;700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
+  
 </head>
 <body>
 <!-- INIZIO MENU -->
@@ -29,7 +30,6 @@
         </ul>
       </div>
       </div>
-  
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -57,7 +57,6 @@
         and motivated individual, capable of
         effective communication and achieving
         designated objectives.
-
       </p>
       <div class="btn">
         <a href="assets/FABIO TEDESCO CV - ENG.pdf" download><button>My CV</button></a> 
@@ -221,19 +220,19 @@
 
    <h1>Contact <span>Me</span></h1>
 
-  <form action="#" method="post">
+  <form action="https://formsubmit.co/cc2b4c75d54d59550495efc69db4a7ad" method="post">
     <div class="first-row">
-      <input type="text" id="fullName" placeholder="Full Name">
-      <input type="tel" id="mobileNumber" placeholder="Mobile number">
+      <input name="name" type="text" placeholder="Full Name" required>
+      <input name="phone" type="tel"  placeholder="Mobile number">
     </div>
  
     <div class="second-row">
-      <input type="email" id="email" placeholder="Email">
-      <input type="email" id="email-subject" placeholder="Email Subject">
+      <input name="email" id="email" placeholder="Email" required>
+      <input name="email-subject" id="email-subject" placeholder="Email Subject" required>
     </div>
     
-    <textarea id="message" name="message" placeholder="Your message"></textarea>
-    <div class="btn"><button>Submit</button></div>
+    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+    <div class="btn" type="submit" value="send"><button>Submit</button></div>
   </form>
   </section>
   <!-- FINE SECTION-4 -->
@@ -251,3 +250,4 @@
 
 </body>
     </html>
+
