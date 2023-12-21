@@ -1,4 +1,3 @@
-@import "config";
 @import "menu";
 @import "section-1";
 @import "section-2";
@@ -6,6 +5,11 @@
 @import "section-4";
 @import "footer";
 @import "config";
+
+$primary-color: linear-gradient(to top, 
+rgb(238,238,238), rgb(205, 205, 205));
+$secondary-color:  RGB(128, 0, 0);
+
 
 
 *{
